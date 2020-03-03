@@ -1,9 +1,5 @@
 /* 1RZZCR3Bm5 - Sitios en Argentina */
 
-
-
-
-
 if(true){}
 function read__message(m){if(m.data&&m.data.msg&&m.data.msg=="adcase"){m.data.m="adzone";m.data.a="print";if(m.data.format=="footerFixed"){console.log("-------------------");console.log(m);console.log(m.data);console.log("-------------------");m.data.f="108";adzone.readFormatMessage(m);}}}
 window.addEventListener("message",read__message,false);var adzone=adzone||{};var googletag=googletag||{};googletag.cmd=googletag.cmd||[];(function(t){var gads=document.createElement('script');gads.async=true;gads.type='text/javascript';gads.src='https://www.googletagservices.com/tag/js/gpt.js';document.head.appendChild(gads);t.cs={};t.start_time=new Date().getTime();t.tagcmd=t.tagcmd||[];t.adtypes={};t.event_history=[];t.slotRenderedCallback={};t.slotRenderedCallbackAll=null;t.ad_events=[];t.network_code=40327789;t.page_path=(function(){return"/"})();t.is_single_request=false;t.kv=(function(){var section="";try{section=document.location.href.split("/")[2]}catch(e){}
