@@ -43,13 +43,13 @@ t.ad_events=[];
 
 
 
-t.network_code = 40327789;
+t.network_code = 40327789123131;
 t.page_path = (function() { return "/" })();
 t.is_single_request = false;
 t.kv = (function() { var section = "";
 try { section=document.location.href.split("/")[2] } catch(e) {}
 return { key1:"value1", key2:[1,2,3,4], section:section }; })();
-t.size_mapping=[{"device": "all_devices", "adtype": "fluid", "min_width": 0, "sizes": ["fluid", [300, 250]]}, {"device": "mobile", "adtype": "box600", "min_width": 0, "sizes": [[300, 250]]}, {"device": "desktop", "adtype": "box600", "min_width": 0, "sizes": [[300, 600], [300, 250]]}, {"device": "mobile", "adtype": "bigbox", "min_width": 0, "sizes": [[300, 250], [300, 100], [300, 50], [300, 600]]}, {"device": "desktop", "adtype": "bigbox", "min_width": 0, "sizes": [[300, 600], [300, 250]]}, {"device": "desktop", "adtype": "push", "min_width": 0, "sizes": [[728, 90], [950, 50], [950, 200], [950, 250], [970, 90], [970, 250], "[970", "250]]"]}, {"device": "mobile", "adtype": "push", "min_width": 0, "sizes": [[300, 250], [300, 100], [320, 50]]}, {"device": "desktop", "adtype": "firstpush", "min_width": 0, "sizes": [[728, 90], [950, 50], [950, 200], [950, 250], [970, 90], [970, 250], "[970", "250]]"]}, {"device": "mobile", "adtype": "firstpush", "min_width": 0, "sizes": [[300, 100], [320, 50]]}, {"device": "mobile", "adtype": "underHeader", "min_width": 0, "sizes": [[300, 100], [320, 50]]}, {"device": "desktop", "adtype": "fullcontent", "min_width": 0, "sizes": [[1, 1], [1000, 480], [1000, 540]]}, {"device": "mobile", "adtype": "fullcontent", "min_width": 0, "sizes": [[1, 1], [320, 480]]}, {"device": "mobile", "adtype": "fullcontent", "min_width": 480, "sizes": [[1, 1], [480, 320]]}, {"device": "desktop", "adtype": "topbanner", "min_width": 0, "sizes": [[950, 50], [970, 90]]}, {"device": "mobile", "adtype": "topbanner", "min_width": 0, "sizes": [[300, 50], [320, 50]]}, {"device": "desktop", "adtype": "floating", "min_width": 0, "sizes": [[260, 650], [260, 600]]}, {"device": "mobile", "adtype": "zocalo", "min_width": 0, "sizes": [[300, 51], [300, 50], [320, 51], [320, 50]]}, {"device": "desktop", "adtype": "zocalo", "min_width": 0, "sizes": [[728, 91], [728, 90], [950, 90], [950, 50]]}, {"device": "all_devices", "adtype": "box", "min_width": 0, "sizes": [[300, 250]]}];
+t.size_mapping=[{"device": "mobile", "adtype": "1", "min_width": 123, "sizes": ["3"]}, {"device": "desktop", "adtype": "4", "min_width": 2223, "sizes": ["5"]}, {"device": "all_devices", "adtype": "222", "min_width": 2, "sizes": [""]}, {"device": "mobile", "adtype": "", "min_width": 0, "sizes": [""]}];
 t.size_mappings=[  { device: "desktop,mobile", adtype: "box", sizes: [300, 250] },
   { device: "desktop,mobile", adtype: "fluid", sizes: ['fluid', [300, 250]] },
   { device: "mobile", adtype: "box600", sizes: [[300, 250]] },
