@@ -427,7 +427,9 @@ adzone.helpers.itt = function(t) {
   }
 };
 adzone.helpers.ittHide = function(containerId) { 
-  console.log("ittHide", containerId);
+  adzone.log("ittHide", containerId);
+  document.body.style.overflow = adzone.old_body_overflow || "";
+  document.body.style.height = adzone.old_body_height || "";
   document.getElementById("adzone_prestitial_cover") && (document.getElementById("adzone_prestitial_cover").style.display="none");
   var t = adzone.s[containerId];
   
@@ -439,8 +441,6 @@ adzone.helpers.ittHide = function(containerId) {
   c.style.marginTop = 0;
   c.style.marginLeft = 0;
   c.style.left = 0;
-  document.body.style.overflow = adzone.old_body_overflow || "";
-  document.body.style.height = adzone.old_body_height || "";
 
   window.clearTimeout(adzone.s[containerId].closeTimeout);
   window.setTimeout(function() {
