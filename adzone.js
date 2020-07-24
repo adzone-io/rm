@@ -1,5 +1,5 @@
 /* 
-* Adzone Rich Media v2.1.80
+* Adzone Rich Media v2.1.81
 * Copyright (C) 2020 Adzone SRL 
 * https://adzone.io
 * All rights reserved
