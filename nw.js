@@ -2,9 +2,12 @@ adzone = adzone || {};
 adzone.run_nw = {};
 
 adzone.run_nw.smart = function(p, is_init) {
-  is_init && adzone.get_script("https://ced.sascdn.com/tag/3821/smart.js") && return;
+  if(is_init) {
+    adzone.get_script("https://ced.sascdn.com/tag/3821/smart.js");
+    return;
+  } 
 
-  var d = adzone.get_slot("sas_" + p.formatId);
+  adzone.get_slot("sas_" + p.formatId);
 
   sas.cmd = sas.cmd || [];
   var param1 = { siteId: p.siteId, pageId: p.pageId, formatId: p.formatId, tagId: "sas_"+p.formatId };
@@ -15,9 +18,12 @@ adzone.run_nw.smart = function(p, is_init) {
 
 adzone.run_nw.google = function(p, is_init) {
   
-  is_init && adzone.get_script("https://securepubads.g.doubleclick.net/tag/js/gpt.js") && return;
+  if(is_init) {
+    adzone.get_script("https://securepubads.g.doubleclick.net/tag/js/gpt.js");
+    return;
+  } 
 
-  var d = adzone.get_slot("google_slot");
+  adzone.get_slot("google_slot");
 
   googletag.cmd.push(function() {
     googletag.defineSlot(p.ad_unit_path, p.size, 'google_slot').addService(googletag.pubads());
@@ -27,6 +33,7 @@ adzone.run_nw.google = function(p, is_init) {
       if(e.isEmpty && p.next_network) {
         adzone.next_network(p.next_network);
       };
+    });
   });
 }
 
@@ -41,7 +48,7 @@ adzone.get_script = function(src) {
   window.googletag = window.googletag || {cmd: []};
   var d = document.createElement("script");
   d.async="async";
-  d.src="https://securepubads.g.doubleclick.net/tag/js/gpt.js";
+  d.src=src;
   document.head.appendChild(d);
 }
 
@@ -54,7 +61,6 @@ adzone.get_slot = function(div_id) {
     d.id = "google_slot";
     document.body.appendChild(d);
   }
-  return d;
 }
 
 adzone.nwm = function(e) { // onMessage
@@ -91,10 +97,6 @@ adzone.next_network = function(network_name) {
   }
 }
 
-if(adzone.network_name) {
-  adzone.next_network(adzone.network_name);
+if(adzone.nw && adzone.nw.network_name) {
+  adzone.next_network(adzone.nw.network_name);
 }
-
-
-
-
