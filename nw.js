@@ -93,7 +93,7 @@ adzone.next_network = function(network_name) {
     }
 
     window.addEventListener ? window.addEventListener("message", adzone.nwm, !1) : window.attachEvent && window.attachEvent("message", adzone.nwm);
-    window.top.postMessage({ m: "adzone", a:"print", f:'network', p:{ name: adzone.network_name } } , "*");
+    window.top.postMessage({ m: "adzone", a:"print", f:'network', p:{ name: (adzone.network_name||false) } } , "*");
   }
 }
 
