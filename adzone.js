@@ -1,5 +1,5 @@
 /* 
-* Adzone v2.2.18
+* Adzone v2.2.19
 * Copyright (C) 2020 Adzone SRL 
 * https://adzone.io
 * All rights reserved
